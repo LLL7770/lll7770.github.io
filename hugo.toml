@@ -1,5 +1,39 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = "Hinode"
+copyright = "Copyright © 2023 Mark Dumay."
+enableGitInfo = true
+hasCJKLanguage = true
+
 [[module.imports]]
 path = 'github.com/gethinode/hinode'
+
+[params.home]
+  sections = ["posts"]
+  fullCover = false
+  centerHeadline = true
+  style = ""
+  [params.home.feature]
+    orientation = "horizontal"
+    color = "primary"
+    width = 4
+    align = "start"
+
+[params.sections]
+  [params.sections.posts]
+    title = "Posts"
+    homepage = 6
+    layout = "card"
+    wrap = true
+
+[params.navigation]
+  search = false
+
+[params.sharing]
+  enabled = false
+
+[menu]
+[[menu.main]]
+  name = "About"
+  pageRef = "/about/"
+  weight = 10
