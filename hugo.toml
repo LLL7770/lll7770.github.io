@@ -5,6 +5,8 @@ copyright = "Copyright © 2023 Mark Dumay."
 enableGitInfo = true
 hasCJKLanguage = true
 
+staticDir = ['static']
+
 [[module.imports]]
 path = 'github.com/gethinode/hinode'
 
@@ -37,3 +39,7 @@ path = 'github.com/gethinode/hinode'
   name = "About"
   pageRef = "/about/"
   weight = 10
+
+[[resources]]
+  name = "logo"
+  src = "./static/images/IMG_6695.JPG"
